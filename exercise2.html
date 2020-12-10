@@ -1,0 +1,137 @@
+<html>
+<head>
+<title>exercise2</title>
+</head>
+<body style="background-image:url('image.jpg'); background-repeat: no-repeat;background-size:cover;">
+<h1 align="center" style="color:orange;"><u>INTRODUCTION TO WEBTECHNOLOGY</u></h1>
+<br><br><br>
+<table border="0" align="center">
+<tr>
+<td>
+<ul>
+<li>
+<a href="#client"style=" color:red;font-size:30px;">client/server</a>
+</li>
+<br>
+<li>
+<a href="#web app" style="color:red;font-size:30px;">web application</a>
+</li>
+<br>
+<li>
+<a href="#component of web" style=" color:red;font-size:30px;">component of web application</a>
+</li>
+<br>
+<li>
+<a href="#types of web content" style=" color:red;font-size:30px;">types of web content</a>
+</li>
+<br>
+<li>
+<a href="#http-request" style=" color:red;font-size:30px;">http-request</a>
+</li>
+<br>
+<li>
+<a href="#dynamic webpages" style=" color:red;font-size:30px;">Dynamic webpages</a>
+</li>
+<br>
+<li>
+<a href="#application servers" style=" color:red;font-size:30px;"> application servers</a>
+</li>
+<br>
+<li>
+<a href="#web security" style=" color:red;font-size:30px;">web security</a>
+</li>
+<br>
+</ul>
+</td>
+</tr>
+</table>
+<a name="client"></a>
+<h3 style="color:yellow;"><u><i> CLIENT/SERVER</i></u></h3>
+<br><br><br>
+<img src="client.jpg"></img>
+<font color="white" size="6px">
+<p>Web consists of billions of clients and server connected through wires and wireless networks. The web clients make requests to web server. The web server receives the request, finds the resources and return the response to the client. When a server answers a request, it usually sends some type of content to the client. The client uses web browser to send request to the server. The server often sends response to the browser with a set of instructions written in HTML(HyperText Markup Language). All browsers know how to display HTML page to the client.</p>
+<a name="web app"></a>
+<h3 style="color:yellow"><u><i>WEB APPLICATION</i></u></h3>
+<h5><i>Definition:</i></h5>
+<p>The basic definition of a web application is a program that runs on a browser. It’s not a website, but the line between the two is fuzzy. To differentiate a web application from a website, remember these three formal characteristics. A web application:
+<ul>
+<li>addresses a particular problem, even if it’s simply finding some information</li>
+<li>is as interactive as a desktop application</li>
+<li>has a Content Management System</li>
+</ul>
+</p>
+<a name="component of web"></a>
+<h3 style="color:yellow"><u></i>COMPONENTS OF WEB APPLICATION</i></u></h3>
+<p>Most web applications are developed by separating its main functions into layers, or tiers. This allows you to easily replace and upgrade each layer independently. This architectural pattern is called Multi- or Three-Tier Architecture.</p>
+<br><br>
+<img src="web.jpg" height="600" width="500"></img>
+<h6><u></i>PRESENTATION LAYER</i></u></h6>
+<p>
+The presentation layer is accessible to users via a browser and consists of user interface components and UI process components that support interaction with the system. It’s developed using three core technologies: HTML, CSS, and JavaScript. While HTML is the code that determines what your website will contain, CSS controls how it will look. JavaScript and its frameworks make your website interactive – responsive to a user’s actions. Developers use JavaScript frameworks such as Angular and React to make the content on the page dynamic.</p>
+<h6><u></i>BUSINESS LAYER</i></u></h6>
+<p>This layer, also called Business Logic or Domain Logic or Application Layer, accepts user requests from the browser, processes them, and determines the routes through which the data will be accessed. The workflows by which the data and requests travel through the back end are encoded in a business layer. For example, if your application is a hotel booking website, business logic will be responsible for the sequence of events a traveler will go through when booking a room.</p>
+<h6><u></i>PERSISTENCE LAYER</i></u></h6>
+<p>Also called the storage or data access layer, the persistance layer is a centralized location that receives all data calls and provides access to the persistent storage of an application. The persistence layer is closely connected to the business layer, so the logic knows which database to talk to and the data retrieving process is more optimized.</p>
+<a name="types of web content"></a>
+<h3 style="color:yellow;"><u></i>TYPES OF WEB CONTENT</i></u></h3>
+<img src="web2.jpg"></img>
+<p>Web content is the textual, visual, or aural content that is encountered as part of the user experience on websites. It may include—among other things—text, images, sounds, videos, and animations</p>
+<a name="http-request"></a>
+<h3 style="color:yellow;"><u></i>HTTP-REQUEST</i></u></h3>
+<img src="web3.jpg" width="400" height="300"></img>
+<p>The Hypertext Transfer Protocol (HTTP) is an application layer protocol for distributed, collaborative, hypermedia information systems.[1] HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the user can easily access, for example by a mouse click or by tapping the screen in a web browser.</p>
+<p>Development of HTTP was initiated by Tim Berners-Lee at CERN in 1989. Development of early HTTP Requests for Comments (RFCs) was a coordinated effort by the Internet Engineering Task Force (IETF) and the World Wide Web Consortium (W3C), with work later moving to the IETF.</p>
+<p>An HTTP request is an action to be performed on a resource identified by a given Request-URL. Request methods are case-sensitive, and should always be noted in upper case. There are various HTTP request methods, but each one is assigned a specific purpose.</p>
+The various type of HTTP request are given below;
+<ul>
+<li>GET</li>
+<li>HEAD</li>
+<li>POST</li>
+<li>PUT</li>
+<li>DELETE</li>
+<li>PATCH</li>
+<li>TRACE</li>
+<li>CONNECT</li>
+</ul>
+<a name="dynamic webpages"></a>
+<h3 style="color:yellow;"><u></i>DYNAMIC WEBPAGES</i></u></h3>
+<img src="web4.jpg" width="500" height="300"></img>
+<p>web page is a document available on world wide web. Web Pages are stored on web server and can be viewed using a web browser.
+
+A web page can cotain huge information including text, graphics, audio, video and hyper links. These hyper links are the link to other web pages.</p>
+<p>Dynamic web page shows different information at different point of time. It is possible to change a portaion of a web page without loading the entire web page. It has been made possible using Ajax technology.
+<br>
+Server-side dynamic web page:<br>
+It is created by using server-side scripting. There are server-side scripting parameters that determine how to assemble a new web page which also include setting up of more client-side processing.
+<br>
+Client-side dynamic web page:<br>
+It is processed using client side scripting such as JavaScript. And then passed in to Document Object Model (DOM).
+</p>
+<a name="application servers"></a>
+<h3 style="color:yellow;"><u></i>APPLICATION SERVERS</i></u></h3>
+<img src="web5.jpg" width="500" height="300"></img>
+<p>
+Application servers are system software upon which web applications or desktop applications[citation needed] run. Application servers consist of web server connectors,[clarification needed] computer programming languages, runtime libraries, database connectors, and the administration code needed to deploy, configure, manage, and connect these components on a web host. An application server runs behind[citation needed] a web Server (e.g. Apache or Microsoft Internet Information Services (IIS)) and (almost always) in front of an SQL[citation needed] database (e.g. PostgreSQL, MySQL, or Oracle). Web applications are computer code which run atop application servers and are written in the language(s) the application server supports and call the runtime libraries and components the application server offers.</p>
+<p>
+Many application servers exist. The choice impacts the cost, performance, reliability, scalability, and maintainability of a web application.
+</p>
+<p>
+Proprietary application servers provide system services in a well-defined but proprietary manner. The application developers develop programs according to the specification of the application server. Dependence on a particular vendor is the drawback of this approach.
+</p>
+<p>
+An opposite but analogous case is the Java EE platform. Java EE application servers provide system services in a well-defined, open, industry standard. The application developers develop programs according to the Java EE specification and not according to the application server. A Java EE application developed according to Java EE standard can be deployed in any Java EE application server making it vendor independent.
+</p>
+<a name="web security"></a>
+<h3 style="color:yellow;"><u></i>WEB SECURITY</i></u></h3>
+<img src="web6.jpg" width="500" height="300"></img>
+<p>
+Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.</p>
+<p>
+Websites and web applications are just as prone to security breaches as physical homes, stores, and government locations. Unfortunately, cybercrime happens every day, and great web security measures are needed to protect websites and web applications from becoming compromised.
+</p><p>
+That’s exactly what web security does – it is a system of protection measures and protocols that can protect your website or web application from being hacked or entered by unauthorized personnel. This integral division of Information Security is vital to the protection of websites, web applications, and web services. Anything that is applied over the Internet should have some form of web security to protect it.
+</p>
+</font>
+</body>
+</html>
