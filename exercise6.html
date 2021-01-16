@@ -1,0 +1,321 @@
+<html>
+<head>
+<title>exercise6</title>
+<style>
+html
+{
+color:green;
+}
+</style>
+</head>
+<body bgcolor="#FFFFFF">
+<script>
+function length_()
+{
+var b=document.getElementById("n").value;
+var l=b.length;
+alert(l);
+}
+function indexof_()
+{
+var a=document.getElementById("n2").value;
+var text=document.getElementById("n3").value;
+var pos=a.indexOf(text);
+alert(pos);
+}
+function lastindexof_()
+{
+var a=document.getElementById("n4").value;
+var text=document.getElementById("n5").value;
+var pos=a.lastIndexOf(text);
+alert(pos);
+}
+function search_()
+{
+var a=document.getElementById("n6").value;
+var text=document.getElementById("n7").value;
+var pos=a.search(text);
+alert(pos);
+}
+function slice_()
+{
+var a=document.getElementById("n8").value;
+var start=document.getElementById("n9").value;
+var end=document.getElementById("n10").value;
+var string=a.slice(start,end);
+alert(string);
+}
+function replace_()
+{
+var a=document.getElementById("n14").value;
+var string=a.replace(document.getElementById("n15").value,
+document.getElementById("n16").value);
+alert(string);
+}
+function substr_()
+{
+var a=document.getElementById("n11").value;
+var start=document.getElementById("n12").value;
+var length=document.getElementById("n13").value;
+var string=a.substring(start,length);
+alert(string);
+}
+</script>
+
+<form>
+<table border="0"align="left" cellspacing="3" cellpadding="3">
+<tr>
+<td>
+<h1><i>string functions:</i></h1>
+</td>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td>
+<input id="n"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="length" onclick="length_()"></input>
+</th>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td>
+<input id="n2"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE TEXT TO SEARCH</th>
+<td>
+<input id="n3"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="indexOf"  onclick="indexof_()"></input>
+</th>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td>
+<input id="n4"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE TEXT TO SEARCH</th>
+<td>
+<input id="n5"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="lastindexOf"  onclick="lastindexof_()"></input>
+</th>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td>
+<input id="n6"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE TEXT TO SEARCH</th>
+<td>
+<input id="n7"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="search"  onclick="search_()"></input>
+</th>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td rowspan="2">
+<input id="n8"></input>
+</td>
+</tr>
+<tr>
+<th>Start
+<input id="n9" style="width:30;"></input>
+end
+<input id="n10" style="width:30;"></input>
+</th>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="slice"  onclick="slice_()"></input>
+</th>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td rowspan="2">
+<input id="n11"></input>
+</td>
+</tr>
+<tr>
+<th>Start
+<input id="n12" style="width:30;"></input>
+length
+<input id="n13" style="width:30;"></input>
+</th>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="substr"  onclick="substr_()"></input>
+</th>
+</tr>
+<tr>
+<th>ENTER THE STRING:</th>
+<td rowspan="2">
+<input id="n14"></input>
+</td>
+</tr>
+<tr>
+<th><i>word to replace</i>
+<input id="n15" style="width:40;"></input>
+<i>New word</i>
+<input id="n16" style="width:40;"></input>
+</th>
+</tr>
+<tr>
+<td></td>
+<th>
+<input type="button" value="replace"  onclick="replace_()"></input>
+</th>
+</tr>
+</table>
+<table align="center">
+<tr>
+<td>
+<h1><i>Math functions:</i></h1>
+</td>
+</tr>
+<tr>
+<th>ENTER THE NUMBER TO ROUND:</th>
+<td>
+<input id="a"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="round"  onclick="round_()"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE NUMBER:</th>
+<td>
+<input id="b"></input>
+</td>
+</tr>
+<tr>
+<th>POWER:</th>
+<td>
+<input id="c"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="pow"  onclick="pow_()"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE NUMBER:</th>
+<td>
+<input id="d"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="sqrt"  onclick="sqrt_()"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE NUMBER:</th>
+<td>
+<input id="e"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="absolute"  onclick="abs_()"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE NUMBER:</th>
+<td>
+<input id="f"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="ceil"  onclick="ceil_()"></input>
+</td>
+</tr>
+<tr>
+<th>ENTER THE NUMBER:</th>
+<td>
+<input id="g"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="button" value="floor"  onclick="floor_()"></input>
+</td>
+</tr>
+</table>
+<script>
+function round_()
+{
+var n=document.getElementById("a").value;
+var value=Math.round(n);
+alert(value);
+}
+function pow_()
+{
+var n=document.getElementById("b").value;
+var p=document.getElementById("c").value;
+var value=Math.pow(n,p);
+alert(value);
+}
+function sqrt_()
+{
+var n=document.getElementById("d").value;
+var value=Math.sqrt(n);
+alert(value);
+}
+function abs_()
+{
+var n=document.getElementById("e").value;
+var value=Math.abs(n);
+alert(value);
+}
+function ceil_()
+{
+var n=document.getElementById("f").value;
+var value=Math.ceil(n);
+alert(value);
+}
+function floor_()
+{
+var n=document.getElementById("g").value;
+var value=Math.floor(n);
+alert(value);
+}
+</script>
+</body>
+</html>
