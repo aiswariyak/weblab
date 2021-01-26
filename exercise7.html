@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>exercise7</title>
+</head>
+<body style="background-image:url('exercise7_image.jpeg');background-repeat:no-repeat;background-size:cover;">
+<b>Enter The Year:</b><input id="abc"></input>
+<input type="button" value="calender" onClick="calender()"></input>
+<p id="b"></p>
+<script>
+function calender()
+{
+var i,j,k,y,day,a;
+var d="";
+
+d+="<table border='1'><tr><th>JANUARY</th><th>FEBRUARY</th><th>MARCH</th><th>APRIL</th><th>MAY</th></tr><tr><td>";
+for(i=0; i<12; i++)
+{
+d+="<table border='1'><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr><tr>";
+y=document.getElementById('abc').value;
+a=new Date(y,i);
+day=a.getDay();
+for(j=0; j<day; j++)
+{
+d+="<td></td>";
+}
+while(a.getMonth()==i)
+{
+d+="<td>"+ a.getDate()+ "</td>";
+if(a.getDay()%7==6)
+{
+d+="</tr><tr>";
+}
+a.setDate(a.getDate()+1);
+}
+d+="</tr></table>";
+d+="</td><td>";
+if(i==4)
+d+="</td><tr><th>JUNE</th><th>JULY</th><th>AUGUST</th><th>SEPTEMBER</th><th>OCTOBER</th></tr><tr><td>";
+else if(i==9)
+d+="</td><tr><th>NOVEMBER</th><th>DECEMBER</th></tr><tr><td>";
+}
+d+="</table>";
+d+="</td></tr></table>";
+document.getElementById("b").innerHTML=d;
+}
+</script>
+</body>
+</html>
