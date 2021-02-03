@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>exercise9</title>
+</head>
+<body>
+<b>To change background color click the button</b>
+<form>
+<input type="button" value="click" id="bg"></input>
+</form>
+<script>
+document.getElementById("bg").addEventListener("click",bgcolor);
+function bgcolor()
+{
+var ranclr= "";
+for(var i=0;i<6;i++)
+{
+ranclr +=Math.floor(Math.random() * 10);
+}
+document.body.style.background="#" + ranclr;
+}
+</script>
+</body>
+</html>
