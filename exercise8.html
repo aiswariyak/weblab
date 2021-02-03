@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>exercise_8</title>
+<style>
+th
+{
+color:yellow;
+}
+input
+{
+width:300px;
+}
+</style>
+</head>
+<body bgcolor="orange">
+<h1 align="center"><i>REGISTRATION FORM</i></h1>
+<form name="myform" action="" onsubmit="return validateForm()" method="post">
+<table style="background-color:black;" align="center" cellspacing="20" cellpadding="20">
+<tr>
+<th>enter the name</th>
+<td>
+<input type="text" name="name"></input>
+</td>
+</tr>
+<tr>
+<th>enter the email-id</th>
+<td>
+<input type="email" name="email"></input>
+</td>
+</tr>
+<tr>
+<th>enter mobile no</th>
+<td>
+<input type="text" name="mob"></input>
+</td>
+</tr>
+<tr>
+<th>user-id</th>
+<td>
+<input type="text" name="uid" ></input>
+</td>
+</tr>
+<tr>
+<th>password</th>
+<td>
+<input type="password" name="password"></input>
+</td>
+</tr>
+<tr>
+<th>re-enter-password</th>
+<td>
+<input type="password" name="repassword"></input>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" value="submit" style="width:50;"></input>
+</td>
+</tr>
+</table>
+</form>
+<script>
+function validateForm()
+{
+var name=document.myform.name.value;
+var mail=document.myform.email.value;
+var mob=document.myform.mob.value;
+var uid=document.myform.uid.value;
+var password=document.myform.password.value;
+var repassword=document.myform.repassword.value;
+var char_=/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/; 
+if(name=="")
+{
+alert("name field cannot be blank");
+document.myform.name.focus();
+return false;
+}
+if(mail=="")
+{
+alert("email-id field cannot be blank");
+document.myform.email.focus();
+return false;
+}
+if(mob=="")
+{
+alert("mobile no field cannot be blank");
+document.myform.mob.focus();
+return false;
+}
+else if(isNaN(mob) || mob.length!=10)
+{
+alert("enter a valied 10 digit mobile number");
+return false;
+}
+if(uid=="")
+{
+alert("user-id field cannot be blank");
+document.myform.uid.focus();
+return false;
+}
+else if(uid.length<6)
+{
+alert("user id must contain atleast 6 characters");
+return false;
+}
+if(password=="" || password.length<8 ||!char_.test(password))
+{
+alert("password must contain atleast 8 characters including atleast one uppercase and lowercase,atleast one number and atleast one special symbol");
+document.myform.password.focus();
+return false;
+}
+if(repassword=="" )
+{
+alert("re-password field cannot be blank");
+document.myform.repassword.focus();
+return false;
+}
+else if(repassword!=password)
+{
+alert("incorrect password");
+return false;
+}
+}
+</script>
+</body>
+</html>
