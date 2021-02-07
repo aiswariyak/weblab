@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>exercis10</title>
+<style>
+img
+{
+width:50%;
+height:50%;
+}
+</style>
+</head>
+<body>
+<div id="content">
+<h4 id="word"><i>HEAVEN IS UNDER OUR FEET AS WELL AS OUR HEADS........................</i></h4>
+<img id="image" src="image2.jfif"></img>
+</div>
+<script>
+document.getElementById("content").addEventListener("mouseover",myfun1);
+document.getElementById("content").addEventListener("mouseout",myfun2);
+function myfun1()
+{
+w="LOOK DEEP INTO NATURE,AND THEN YOU WILL UNDERSTAND EVERYTHING BETTER............................";
+document.getElementById('word').innerHTML=w;
+document.getElementById('image').src="image1.jpg";
+}
+function myfun2()
+{
+w="HEAVEN IS UNDER OUR FEETAS WELL AS OUR HEADS........................"
+document.getElementById('word').innerHTML=w;
+document.getElementById('image').src="image2.jfif";
+}
+</script>
+</body>
+</html>
